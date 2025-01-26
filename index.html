@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Optimizer Sandbox</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="url-section">
+        <h2>URL Input</h2>
+        <textarea id="url-input" placeholder="Enter optimizer service URL here"></textarea>
+    </div>
+    <div class="controls">
+        <button id="to-data">&#8594;</button>
+        <button id="to-url">&#8592;</button>
+    </div>
+    <div class="data-section">
+        <h2>Route Details</h2>
+        <table id="route-table">
+            <tr>
+                <th>Index</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Stop Time</th>
+            </tr>
+        </table>
+        <h2>Additional Information</h2>
+        <p><strong>Round Trip:</strong> <span id="round-trip" contenteditable="true"></span></p>
+        <p><strong>Departure Time:</strong> <span id="departure-time" contenteditable="true"></span></p>
+        <p><strong>Rescheduling:</strong> <span id="rescheduling" contenteditable="true"></span></p>
+        <p><strong>Straight Route Threshold:</strong> <span id="straight-route-threshold" contenteditable="true"></span></p>
+        <p><strong>Profile:</strong> <span id="profile" contenteditable="true"></span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
