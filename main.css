@@ -37,9 +37,6 @@ th {
 td {
     cursor: pointer;
 }
-td[contenteditable] {
-    background-color: #ffffff;
-}
 .start {
     background-color: #d4edda;
 }

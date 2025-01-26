@@ -132,24 +132,3 @@ function toUnixDateTime(dateString) {
     }
 }
 
-//
-// function toHumanReadableTime(unix_timestamp) {
-//     if (unix_timestamp === -1) {
-//         return "Not specified";
-//     }
-//     const date = new Date(unix_timestamp * 1000);
-//     return date.toISOString().replace('T', ' ').slice(0, 19); // Убираем миллисекунды
-// }
-//
-// function toUnixDateTime(dateString) {
-//     try {
-//         const date = new Date(dateString.replace(" ", "T"));
-//         if (isNaN(date.getTime())) {
-//             return "-1";
-//         }
-//         return (date.getTime() / 1000).toFixed(0); // Сохраняем точность
-//     } catch (error) {
-//         console.error("Ошибка преобразования:", error.message);
-//         return null;
-//     }
-// }
